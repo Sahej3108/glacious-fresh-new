@@ -1,45 +1,97 @@
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 580 130"
-     width="1160" height="260"
-     role="img" aria-label="Glacious Fresh">
+     viewBox="0 0 322 62"
+     width="644"
+     height="124"
+     role="img"
+     aria-label="Glacious Fresh">
 
   <title>Glacious Fresh</title>
 
   <defs>
-    <linearGradient id="speedLine" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="gf-speed-lines"
+                    x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="35%" stop-color="#8BC5E8" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#174FAE" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#DCE8F5" stop-opacity="0.6"/>
+      <stop offset="65%" stop-color="#2458B8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#174BAA" stop-opacity="1"/>
     </linearGradient>
   </defs>
 
-  <!-- GLACIOUS wordmark -->
-  <g fill="#8BC53F">
-    <text x="290" y="66"
-          text-anchor="middle"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="66"
-          font-weight="800"
-          letter-spacing="-2.8">GLACIOUS</text>
+  <!-- GLACIOUS: original geometric letter shapes -->
+  <g fill="none"
+     stroke="#8BC53F"
+     stroke-width="8"
+     stroke-linejoin="miter"
+     stroke-linecap="butt">
+
+    <!-- G -->
+    <path d="M36 4H13Q4 4 4 13V25Q4 34 13 34H27Q36 34 36 25V20H23"/>
+
+    <!-- L -->
+    <path d="M50 0V34H78"/>
+
+    <!-- C -->
+    <path d="M174 4H149Q140 4 140 13V25Q140 34 149 34H174"/>
+
+    <!-- I -->
+    <path d="M184 0V38"/>
+
+    <!-- O -->
+    <rect x="198" y="4" width="32" height="30" rx="9"/>
+
+    <!-- U -->
+    <path d="M244 0V25Q244 34 253 34H265Q274 34 274 25V0"/>
+
+    <!-- S -->
+    <path d="M318 4H295Q288 4 288 11V12Q288 19 295 19H311Q318 19 318 26V27Q318 34 311 34H284"/>
   </g>
+
+  <!-- A: custom triangular letter -->
+  <path fill="#8BC53F"
+        fill-rule="evenodd"
+        d="M84 38L99 0H115L130 38H118L115.8 32.5H98.2L96 38ZM107 10.2L112.9 25H101.1Z"/>
 
   <!-- Three blue speed lines -->
   <g fill="none"
-     stroke="url(#speedLine)"
-     stroke-width="2.8">
-    <path d="M12 89 H386"/>
-    <path d="M22 101 H405"/>
-    <path d="M35 113 H383"/>
+     stroke-linecap="butt">
+    <path d="M1 47H196"
+          stroke="url(#gf-speed-lines)"
+          stroke-width="1.4"/>
+    <path d="M1 51.2H205"
+          stroke="url(#gf-speed-lines)"
+          stroke-width="1.8"/>
+    <path d="M1 55.4H194"
+          stroke="url(#gf-speed-lines)"
+          stroke-width="1.8"/>
   </g>
 
-  <!-- FRESH wordmark -->
-  <text x="410" y="116"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="37"
-        font-weight="700"
-        font-style="italic"
-        letter-spacing="9"
-        fill="#8BC53F">FRESH</text>
+  <!-- FRESH: italic custom-stroked lettering -->
+  <g transform="translate(211.5 44) skewX(-14)"
+     fill="none"
+     stroke="#8BC53F"
+     stroke-width="2.7"
+     stroke-linecap="butt"
+     stroke-linejoin="miter">
+
+    <!-- F -->
+    <path d="M1.5 14V1.5H15M1.5 7.5H12"/>
+
+    <!-- R -->
+    <path transform="translate(24 0)"
+          d="M1.5 14V1.5H10Q15 1.5 15 5.5Q15 9.5 10 9.5H1.5M9 9.5L15 14"/>
+
+    <!-- E -->
+    <path transform="translate(48 0)"
+          d="M15 1.5H1.5V12.5H15M1.5 7H13"/>
+
+    <!-- S -->
+    <path transform="translate(72 0)"
+          d="M15 1.5H4Q1.5 1.5 1.5 4V4.5Q1.5 7 4 7H12Q15 7 15 9.5V10Q15 12.5 12 12.5H1"/>
+
+    <!-- H -->
+    <path transform="translate(96 0)"
+          d="M1.5 0V14M13.5 0V14M1.5 7H13.5"/>
+  </g>
 
 </svg>
